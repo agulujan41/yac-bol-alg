@@ -1,0 +1,24 @@
+{
+    "cursos": [
+        {
+            "curso_id": 1,
+            "nombre": "Python START 1",
+            "duracion_estimada_meses": 8
+        },
+        {
+            "curso_id": 2,
+            "nombre": "Python PRO 1",
+            "duracion_estimada_meses": 8
+        },
+        {
+            "curso_id": 3,
+            "nombre": "Alfabetización Digital",
+            "duracion_estimada_meses": 8
+        },
+        {
+            "curso_id": 4,
+            "nombre": "Programación Visual",
+            "duracion_estimada_meses": 8
+        }
+    ]
+}

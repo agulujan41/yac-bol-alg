@@ -1,0 +1,35 @@
+
+.form_oficial{
+    width: 90%;
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.progress{
+    height: 30px;
+    font-size: 0.85em;
+}
+.calificaciones{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.calificaciones h1{
+    font-size: 1em;
+    color: white;
+}
+.botones_feedback{
+    width:fit-content;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    
+}
+.input-group{
+    width: 30%;
+    
+}

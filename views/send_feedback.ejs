@@ -1,0 +1,357 @@
+<%- include("templates/cabecera",{titulo:"Enviar un feedback"}) %>
+    <div class="form_oficial">
+        <div class="form-floating">
+            <select class="form-select" id="select_cursos" aria-label="Floating label select example" >
+                <option selected value="none-value">Selecciona una opción</option>
+                <%  for(var i=0; i < cursos['cursos'].length; i++) { %>
+                    <option value="<%= cursos["cursos"][i]["curso_id"] %>">
+                        <%= cursos["cursos"][i]["nombre"] %>
+                    </option>
+                    
+                 <% }  %>
+                
+                
+            </select>
+            <label for="floatingSelect">Seleccione curso</label>
+        </div>
+        <div class="form-floating">
+            <select class="form-select" id="select_grupos" aria-label="Floating label select example">
+                <option selected>Selecciona grupo</option>
+            </select>
+            <label for="floatingSelect">Seleccione grupo</label>
+        </div>
+        <div class="row g-2">
+            <div class="col-md">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="i_text_alumno" placeholder="Apellido y Nombre"
+                        value="">
+                    <label for="floatingInputGrid">Buscar por Apellido y Nombre de alumno</label>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating">
+                    <select class="form-select" id="select_alumnos">
+                        <option selected>Seleccione un alumno</option>
+                        
+                    </select>
+                    <label for="floatingSelectGrid">Alumno seleccionado</label>
+                </div>
+            </div>
+        </div>
+        <div class="calificaciones">
+            
+            <h1 >Asistencia a clases</h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            <h1 >Llegada a tiempo a clases</h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            <h1 >Comportamiento</h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            <h1 >Participación en clases </h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            <h1 >Desarrollo de actividades en la plataforma</h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            <h1 >Desempeño de actividades en la plataforma</h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            <h1 >Creatividad</h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            <h1 >Uso de plataforma</h1>
+            <div class="input-group mb-3">
+                
+                <input type="number" class="form-control itpercent" aria-label="Dollar amount (with dot and two decimal places)"  min="0" max="100" maxlength="3">
+                <span class="input-group-text">%</span>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+
+            </div>
+            
+        </div>
+        
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Comentario del profesor" id="floatingTextareaProf" style="height: 100px"></textarea>
+            <label for="floatingTextareaProf">Comentario del profesor</label>
+        </div>
+        <div class="botones_feedback">
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" id = "btnVistaPrevia"  type="button" style="display:flex;gap:10px;align-items: center;justify-content: center;" ><i class="fa fa-eye"></i>Vista Previa</button>
+                <button class="btn btn-primary" id = "btnEnviar" type="button" style="display:flex;gap:10px;align-items:center; justify-content: center;" ><i class="fa fa-telegram" ></i>Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        //FORM ALUMNO
+        var select_cursos = document.getElementById( "select_cursos" );
+        var select_grupos = document.getElementById( "select_grupos" );
+        var select_alumnos = document.getElementById( "select_alumnos" );
+        var i_text_alumno = document.getElementById( "i_text_alumno" );
+
+        var floatingTextareaProf = document.getElementById("floatingTextareaProf");
+
+        var calificaciones_i_text = document.getElementsByClassName("itpercent");
+        var progress_bar = document.getElementsByClassName("progress-bar");
+
+
+        select_alumnos.disabled = true;
+        select_grupos.disabled = true;
+        i_text_alumno.disabled = true;
+        var alumnos_selected = []
+        select_cursos.addEventListener('change',function onChangedCurso(){
+            vaciar_grupos();
+            vaciar_alumnos();
+            select_alumnos.disabled = true;
+            select_grupos.disabled = false;
+            i_text_alumno.disabled = true;
+            if (this.value !="none-value"){
+                let option;
+                var grupos =<%- JSON.stringify(grupos) %>;
+    
+                for(var i=0; i < grupos['grupos'].length; i++) {  
+                    
+                    if(grupos['grupos'][i]["curso_id"] == parseInt(this.value)){ 
+                        
+                        option = document.createElement( 'option' );
+                        option.value = grupos['grupos'][i]['grupo_id'];
+                        option.text = grupos['grupos'][i]['weekday'].charAt(0).toUpperCase() + grupos['grupos'][i]['weekday'].slice(1) ;
+                        option.text+= " "+grupos['grupos'][i]['hs_start'] + " a " + grupos['grupos'][i]['hs_end']
+                        select_grupos.add( option );
+                        } 
+                    
+                    } 
+            }
+            else{
+                select_alumnos.disabled = true;
+                select_grupos.disabled = true;
+                i_text_alumno.disabled = true;
+            }
+        });
+        select_grupos.addEventListener('change',function onChangedGrupo(){
+            vaciar_alumnos()
+            select_alumnos.disabled = false;
+            i_text_alumno.disabled = false;
+            if (this.value != "none-value"){
+                var alumnos =<%- JSON.stringify(alumnos) %>;
+                for(var i=0; i < alumnos['alumnos'].length; i++) {  
+                    
+                    if(alumnos['alumnos'][i]["grupo_id"] == parseInt(this.value)){ 
+                        alumnos_selected.push(alumnos['alumnos'][i])
+                        option = document.createElement( 'option' );
+                        option.value = alumnos['alumnos'][i]['alumno_id'];
+                        option.text = alumnos['alumnos'][i]['apellidos'];
+                        option.text+= ", "+ alumnos['alumnos'][i]['nombres'];
+                        select_alumnos.add( option );
+                    } 
+                    
+                } 
+            }
+            else{
+                alumnos_selected=[]
+                select_alumnos.disabled = true;
+                i_text_alumno.disabled = true;
+            }
+        });
+        i_text_alumno.addEventListener('input',function onChangedTextAlumno(){
+            vaciar_alumnos();
+            for(let i=0;i<alumnos_selected.length;i++){
+                let alumno = alumnos_selected[i];
+                let appnom = alumno['nombres']+" "+alumno["apellidos"];
+                appnom = appnom.toUpperCase();
+                if(appnom.includes(this.value.toUpperCase())){
+                    option = document.createElement( 'option' );
+                    option.value = alumno['alumno_id'];
+                    option.text = alumno['apellidos'];
+                    option.text+= ", "+ alumno['nombres'];
+                    select_alumnos.add( option );
+                } 
+            }
+        });
+        select_alumnos.addEventListener('change',function onChangedAlumno(){
+            if (this.value != "none-value"){
+                i_text_alumno.value = this.options[this.selectedIndex].text;
+            }
+        });
+        function vaciar_grupos(){
+            select_grupos.options.length=0;
+            var option;
+            option = document.createElement( 'option' );
+            option.value = "none-value"
+            option.text = "Seleccione un grupo"
+            select_grupos.add( option );
+        }
+        function vaciar_alumnos(){
+            select_alumnos.options.length=0;
+            var option;
+            option = document.createElement( 'option' );
+            option.value = "none-value"
+            option.text = "Seleccione un alumno"
+            select_alumnos.add( option );
+            i_text_alumno.value="";
+        }
+        //CALIFICACIONES
+        var calificaciones_i_text = document.getElementsByClassName("itpercent");
+        var progress_bar = document.getElementsByClassName("progress-bar");
+        for (let i = 0; i<calificaciones_i_text.length;i++){
+            inicializar_progressbars(progress_bar[i]);
+            inicializar_i_text(calificaciones_i_text[i]);
+            calificaciones_i_text[i].addEventListener('input',function onPercentChanged(){
+                if(this.value>100){
+                    this.value = 100;
+                }
+                else{
+                    if(this.value<0){
+                        this.value = 0;
+                    }
+                }
+                
+                var i = Array.from(calificaciones_i_text).indexOf(this);
+                progress_bar[i].style = "width:"+this.value+"%;";
+                progress_bar[i].innerHTML =this.value+"%"
+            });
+        }
+        
+        function inicializar_progressbars(bar){
+            if(bar!=null){
+                bar.style = "width:100%;"
+                bar.innerHTML ="100%";
+            }
+           
+        }
+        function inicializar_i_text(i_text){
+            i_text.value = 100;
+        }
+        function checkAlli_textCalificaciones(){
+            res = false;
+            for (var i = 0 ; i<calificaciones_i_text.length;i++){
+                if(calificaciones_i_text[i].value == ""){
+                    res = true;
+                    break;
+                }
+            }
+            return res;
+        }
+        var btnEnviar = document.getElementById("btnEnviar");
+        btnEnviar.onclick = function onClickedEnviarButton(){
+            
+            
+            if (chequearVacio()){
+                window.alert("Debe rellenar todos los campos.")
+            }
+            else{
+                var calificaciones = []
+                Array.from(calificaciones_i_text).forEach(element => {
+                    calificaciones.push(element.value);
+                });
+                var json_email = {
+                    curso:{
+                        curso_id: select_cursos.value,
+                        nombre: select_cursos.options[select_cursos.selectedIndex].text
+                    },
+                    grupo:{
+                        grupo_id:select_grupos.value,
+                        info:select_grupos.options[select_grupos.selectedIndex].text
+                    },
+                    alumno:{
+                        alumno_id:select_alumnos.value,
+                        info: select_alumnos.options[select_alumnos.selectedIndex].text
+                    },
+                    calificaciones:{
+                        asistencia:calificaciones[0],
+                        llegada:calificaciones[1],
+                        comportamiento:calificaciones[2],
+                        participacion:calificaciones[3],
+                        desarrollo_actividades:calificaciones[4],
+                        desempenio:calificaciones[5],
+                        creatividad:calificaciones[6],
+                        uso_plataforma:calificaciones[7]
+                    },
+                    comentario_profesor: floatingTextareaProf.value
+                }
+                var json_email_string = JSON.stringify(json_email);
+                var encodedJsonStringEmail = encodeURIComponent(json_email_string);
+                window.location = "./sendmail?datos_email="+encodedJsonStringEmail;    
+            }
+        }
+        function chequearVacio(){
+            var res = false;
+            if (select_cursos.value =="none-value"){
+                res = true;
+            }
+            if (!res && select_grupos.value =="none-value"){
+                res = true;
+            }
+            if (!res && select_alumnos.value =="none-value"){
+                res = true;
+            }
+            if (!res && checkAlli_textCalificaciones()){
+                res = true;
+            }
+            if (!res & floatingTextareaProf.value ==""){
+                res = true;
+            }            
+            return res;
+        }
+        </script>
+    <%- include("templates/footer") %>

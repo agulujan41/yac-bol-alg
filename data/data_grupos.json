@@ -1,0 +1,25 @@
+{
+    "grupos":[
+        {
+            "grupo_id":1,
+            "curso_id":1,
+            "weekday":"viernes",
+            "hs_start":"10:00",
+            "hs_end":"11:30"
+        },
+        {
+            "grupo_id":2,
+            "curso_id":1,
+            "weekday":"viernes",
+            "hs_start":"14:00",
+            "hs_end":"15:30"
+        },
+        {
+            "grupo_id":3,
+            "curso_id":2,
+            "weekday":"jueves",
+            "hs_start":"20:00",
+            "hs_end":"21:30"
+        }
+    ]
+}

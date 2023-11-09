@@ -1,0 +1,104 @@
+<img src="http://imgfz.com/i/TWRfDlg.png" alt="" class="icon_first">
+<div class="parrafos">
+  <p class="presentacion">
+    Estimados padres y/o tutores legales,
+  </p>
+  <p class="presentacion">
+    Espero que este mensaje les encuentre bien. En primer lugar, quiero expresar mi agradecimiento por confiarnos la
+    educación en Algorithmics Programming durante este período académico. Ha sido un placer tener como (alumno/a) a
+    <b><%= datos_email["alumno"]["info"] %></b> en mi clase de <b><%= datos_email["curso"]["nombre"] %></b> y observar su crecimiento y desarrollo a lo largo de estos dos meses.
+  </p>
+  <p class="presentacion">
+    Como parte de nuestro compromiso con la mejora continua y la comunicación efectiva, me gustaría compartir con
+    ustedes algunas observaciones y comentarios sobre el desempeño (del o la ) estudiante en mi clase hasta el momento. Este
+    feedback tiene como objetivo proporcionar una visión general de su progreso académico y su participación en el
+    aula virtual.
+  </p>
+  <p class="presentacion">
+    Es importante destacar que este feedback se basa en mi evaluación y observación continua, así como en las tareas
+    y evaluaciones realizadas hasta la fecha. Mi objetivo principal es colaborar con ustedes para asegurarnos de que
+    (la/el) estudiante tengan una experiencia educativa exitosa y enriquecedora.
+  </p>
+  <p class="presentacion">
+    A lo largo de esta retroalimentación, abordaré aspectos específicos del rendimiento académico y el
+    comportamiento en el aula, y proporcionaré sugerencias constructivas para ayudar a los estudiantes a alcanzar
+    su máximo potencial.
+  </p>
+  <p class="presentacion">
+    A continuación, encontrarán detalles específicos sobre el desempeño (del/la) alumno en mi clase.
+  </p>
+</div>
+</div>
+
+
+<div class="retroalimentacion_section">
+<p class="titulo_cursivo">
+  Retroalimentación
+</p>
+
+
+<div class="category">
+  Asistencia a clases
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["asistencia"] %>%;"><%=datos_email["calificaciones"]["asistencia"] %>%</div>
+  </div>
+</div>
+
+<div class="category">
+  Llegada a tiempo a clases
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["llegada"] %>%;"><%=datos_email["calificaciones"]["llegada"] %>%</div>
+  </div>
+</div>
+<div class="category">
+  Comportamiento
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["comportamiento"] %>%;"><%=datos_email["calificaciones"]["comportamiento"] %>%</div>
+  </div>
+</div>
+
+<div class="category">
+  Participación en clases
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["participacion"] %>%;"><%=datos_email["calificaciones"]["participacion"] %>%</div>
+  </div>
+</div>
+<div class="category">
+  Desarrollo de actividades en la plataforma
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["desarrollo_actividades"] %>%;"><%=datos_email["calificaciones"]["desarrollo_actividades"] %>%</div>
+  </div>
+</div>
+<div class="category">
+  Desempeño en las actividades de la plataforma
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["desempenio"] %>%;"> <%=datos_email["calificaciones"]["desempenio"] %>%</div>
+  </div>
+</div>
+<div class="category">
+  Creatividad
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["creatividad"] %>%;"><%=datos_email["calificaciones"]["creatividad"] %>%</div>
+  </div>
+</div>
+<div class="category">
+  Uso de la plataforma
+  <div class="progress-bar">
+    <div class="progress" style="width: <%=datos_email["calificaciones"]["uso_pataforma"] %>%;"><%=datos_email["calificaciones"]["uso_plataforma"] %>%</div>
+  </div>
+</div>
+<div class="comentary">
+  <div class="docente">
+    <img src="http://imgfz.com/i/boplWnB.jpeg" alt="">
+    <h1>Docente Agustín Luján:</h1>
+  </div>
+  <p>
+    "<%= datos_email["comentario_profesor"]  %>"
+  </p>
+</div>
+<div class="last_info">
+  <h1>Luján, Agustin</h1>
+  <h2>Docente</h2>
+  <img src="http://imgfz.com/i/4IbcW81.png" alt="">
+</div>
+</div>
